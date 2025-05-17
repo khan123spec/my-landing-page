@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responisve Website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="mobiel">
+            <ul class="sidebar">
+                <li><img class="logo1" src="images/Untitled-1.png" alt=""></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#"><button class="sing">Sing up</button></a></li>
+                <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul>
+                <li><img class="logo" src="images/Untitled-1.png" alt=""></li>
+                <li class="pc"><a href="#">Home</a></li>
+                <li class="pc"><a href="#">About us</a></li>
+                <li class="pc"><a href="#">Contact us</a></li>
+                <li class="pc"><a href="#"><button class="sing">Sing up</button></a></li>
+                <li class="menu" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'table-column'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <div class="both--header">
+        <img class="man" src="images/man.png" alt="">
+        <div class="text">
+            <p class="sentense">Sing up for free
+            </p>
+            <p class="related">A delightful new way to make logos for your internet<br>
+                startup is coming soon.</p>
+            <div class="input">
+                <input class="button--input" type="text" placeholder="Entir Your Email...">
+                <button class="input--button">Sing up</button>
+            </div>
+        </div>
+
+        <div class="body--cards">
+            <div class="cards">
+                <div class="box box--align">
+                    <img class="clock" src="images/clock.png" alt="">
+                    <h3>Real logos. Real fast.</h3>
+                    <p>Get your logo yestarday with our <br>
+                        super-fast logo maker made just <br>
+                        for startup and side projects</p>
+                </div>
+                <div class="box box--align">
+                    <img class="clock" src="images/computer.png" alt="">
+                    <h3>Do it yourself nad save</h3>
+                    <p>Create an amazing logo yourself <br>
+                        and save loads with our logo <br>
+                        maker made just for you</p>
+                </div>
+                <div class="box box--align">
+                    <img class="clock" src="images/rocket.png" alt="">
+                    <h3>Get website-ready logos</h3>
+                    <p>Instantly download PNG and SVG <br>
+                        files ready for use on your <br>
+                        startup or side projects website</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="both--header container man1">
+            <img class="man" src="images/rockrt ma.png" alt="">
+            <div class="text">
+                <p class="sentense">Launch your website <br>
+                    faster with a new <br>
+                    logo from Logobly
+                </p>
+                <p class="related">Logobly, the impressive new logo maker for internet <br>
+                    satrtups is coming soonp>
+                <div class="input">
+                    <input class="button--input" type="text" placeholder="Entir Your Email...">
+                    <button class="input--button">Sing up</button>
+                </div>
+            </div>
+
+
+
+            <div class="body--cards">
+                <div class="cards">
+                    <div class="box box--align">
+                        <img class="clock" src="images/hard.png" alt="">
+                        <h3>Real logos. Real fast.</h3>
+                        <p>Get your logo yestarday with our <br>
+                            super-fast logo maker made just <br>
+                            for startup and side projects</p>
+                    </div>
+                    <div class="box box--align">
+                        <img class="clock" src="images/font.png" alt="">
+                        <h3>Do it yourself nad save</h3>
+                        <p>Create an amazing logo yourself <br>
+                            and save loads with our logo <br>
+                            maker made just for you</p>
+                    </div>
+                    <div class="box box--align">
+                        <img class="clock" src="images/dimond-alt-svgrepo-com.svg" alt="">
+                        <h3>Get website-ready logos</h3>
+                        <p>Instantly download PNG and SVG <br>
+                            files ready for use on your <br>
+                            startup or side projects website</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="both--header">
+                <img class="man" src="images/three.png" alt="">
+                <div class="text">
+                    <p class="sentense">Save Time.
+                        Save Money. <br>
+                        Do it you way. <br>
+
+                    </p>
+                    <p class="related">The new way to make for your website or app <br>
+                        coming soon.p>
+                    <div class="input">
+                        <input class="button--input" type="text" placeholder="Entir Your Email...">
+                        <button class="input--button">Sing up</button>
+                    </div>
+                </div>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 5% 7%;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: end;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo1 {
+    width: 100px;
+}
+
+li {
+    align-self: center;
+}
+
+ul :first-child {
+    margin-right: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.sidebar {
+    transition: all 0.5s ease;
+    display: none;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.356);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    border-bottom-right-radius: 200px;
+}
+
+.sidebar a {
+    color: rgb(0, 0, 0);
+    margin-right: 0px;
+    height: 10%;
+    width: 200px;
+}
+
+.sidebar {
+    align-content: center;
+    justify-items: center;
+}
+
+.sidebar li {
+    margin-right: 0px;
+    height: 10%;
+    color: rgb(0, 47, 255);
+}
+
+@media(max-width:900px) {
+    .pc {
+        display: none;
+    }
+}
+
+@media (min-width:899px) {
+    .menu {
+        display: none;
+    }
+
+}
+
+.man {
+    width: 40%;
+}
+
+.both--header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sentense {
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+@media(max-width:850px) {
+    .man {
+        width: 100%;
+    }
+
+    .sentense {
+        font-size: 2rem;
+        align-self: center;
+    }
+
+}
+
+@media(max-width:486px) {
+    .sentense {
+        font-size: 2rem;
+
+    }
+
+    .related {
+        font-size: 0.8rem;
+    }
+
+    .text {
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+
+    .button--input {
+        margin-top: 0px;
+    }
+
+    .input--button {
+        display: block;
+        width: 98%;
+    }
+}
+
+.text {
+    margin-top: 8%;
+    margin-left: 6%;
+}
+
+.sing {
+    padding: 0.9rem 1.5rem;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    background-color: rgb(0, 86, 247);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.sing:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+    color: black;
+}
+
+.button--input {
+    padding-left: 20px;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+}
+
+::placeholder {
+    color: rgb(155, 154, 154);
+    font-size: 1.0rem;
+}
+
+.input--button {
+    margin-top: 0;
+    margin: 2px 2px;
+    padding: 0.9rem 1.5rem;
+    border-radius: 20px;
+    outline: 0;
+    border: 0;
+    background-color: rgb(0, 86, 247);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.input {
+    margin-top: 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+.box {
+    padding: 0;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    /* اینجا نیازی به justify-content نداری چون boxها flex container نیستن */
+}
+
+.cards {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* 👈 این مهمه */
+    display: flex;
+    /* این خیلی مهمه */
+    justify-content: space-evenly;
+}
+
+.body--cards {
+    padding: 0;
+
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.clock {
+    width: 27%;
+    margin-top: 10%;
+}
+
+h3 {
+    padding: 10px 10px;
+}
+
+.box--align {
+    text-align: center;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    /* همین خط جای دوتا رو برعکس می‌کنه */
+    gap: 20px;
+}
